@@ -1,12 +1,28 @@
-.SideMenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #192842;   
+.SideMenu-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purple-500);
+  height: 50px;
+  border-bottom: 1px solid var(--purple-600);
+}
+
+.SideMenu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--purple-500);
+  height: 100vh;
+  width: 180px;
 }
 
 .SideMenu-li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SideMenu-li-icon {
+  display: inline-block;
+  margin-right: ;
 }

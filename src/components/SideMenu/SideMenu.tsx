@@ -1,6 +1,7 @@
 import React from 'react';
 import sideMenuListItems from './sideMenuListItems'
 import IconProps from '../../icons/iconprops';
+import AppLogoIcon from '../../icons/AppLogoIcon';
 import './SideMenu.css'
 
 interface SideMenuListItemProps {
@@ -9,10 +10,12 @@ interface SideMenuListItemProps {
 }
 
 const SideMenuListItem: React.FC<SideMenuListItemProps> = (props) => {
-    const {name, icon} = props;
+    const {name, icon: Icon} = props;
     return (
         <li className="SideMenu-li">
-            <span>{icon}</span>
+            <span className="SideMenu-li-icon">
+                <Icon />
+            </span>
             {name}
         </li>
     )
@@ -20,9 +23,14 @@ const SideMenuListItem: React.FC<SideMenuListItemProps> = (props) => {
 
 function SideMenu() {
     return (
-        <ul className="SideMenu">
-            {sideMenuListItems.map((sideMenuListItem, idx) => <SideMenuListItem key={idx} {...sideMenuListItem}/>)}
-        </ul>
+        <div className="SideMenu">
+            <div className="SideMenu-logo">
+                <AppLogoIcon />
+            </div>
+            <ul className="SideMenu-list">
+                {sideMenuListItems.map((sideMenuListItem, idx) => <SideMenuListItem key={idx} {...sideMenuListItem}/>)}
+            </ul>
+        </div>
     )
 }
 

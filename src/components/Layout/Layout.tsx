@@ -1,4 +1,5 @@
 import React from 'react'
+import SideMenu from '../SideMenu/SideMenu';
 import './Layout.css';
 
 interface LayoutProps {
@@ -8,7 +9,9 @@ interface LayoutProps {
 function Layout(props: LayoutProps) {
     const {children} = props;
     return (
-        <div className="layout">
+        <div className="Layout">
+            
+            <SideMenu />
             {children}
         </div>
     )
