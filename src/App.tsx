@@ -11,8 +11,8 @@ import './App.css';
 const App: React.FC = () => {
   return (
     <div className="App">
+    <Router>
       <Layout>
-        <Router>
           <Switch>
             <Route exact path="/">
               <HomePage />
@@ -24,8 +24,8 @@ const App: React.FC = () => {
               <DefaultPage />
             </Route>  
           </Switch>
-        </Router>
       </Layout>
+      </Router>
     </div>
   );
 }

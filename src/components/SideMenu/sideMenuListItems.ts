@@ -4,31 +4,38 @@ import { MonitorIcon, FileIcon, ProfileIcon, PadNoteIcon, PresentationIcon, Sett
 const sideMenuListItems = [
     {
         name: 'Point of sales',
-        icon:  MonitorIcon
+        icon:  MonitorIcon,
+        href: '/monitor'
     }, 
     {
         name: 'Invoices & returns',
-        icon: FileIcon
+        icon: FileIcon,
+        href: '/monitor'
     },
     {
         name: 'Contacts',
-        icon: ProfileIcon
+        icon: ProfileIcon,
+        href: '/contacts'
     },
     {
         name: 'Inventory',
-        icon: PadNoteIcon
+        icon: PadNoteIcon,
+        href: '/inventory'
     },
     {
         name: 'Reports',
-        icon: PresentationIcon
+        icon: PresentationIcon,
+        href: '/reports'
     },
     {
         name: 'Settings',
-        icon: SettingsIcon
+        icon: SettingsIcon,
+        href: '/settings'
     },
     {
         name: 'Imprint',
-        icon: ShieldIcon
+        icon: ShieldIcon,
+        href: '/imprint'
     }
 ]
 

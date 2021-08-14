@@ -1,7 +1,18 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 :root {
-  --light-grey: #f6f7f8;
+  --app-white: #ffffff;
+  --grey-200: #f6f7f8;
+  --grey-500: #abaeb9;
   --green-500: #49cc99;
   --purple-400: #233456;
   --purple-500: #192842;
   --purple-600: #151d33;
+}
+
+.svg {
+  fill: currentColor;
 }
