@@ -1,7 +1,7 @@
 import React from 'react';
 import IconProps from './iconprops'
 
-function AppLogoIcon(props: IconProps) {
+const AppLogoIcon: React.FC<IconProps> = (props) => {
     return (
         <svg width="86" height="22" viewBox="0 0 86 22" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.287872 0.474121H2.77072V11.8899H0.287872V0.474121Z" fill="white"/>

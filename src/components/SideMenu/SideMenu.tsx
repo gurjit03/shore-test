@@ -1,13 +1,14 @@
 import React from 'react';
 import sideMenuListItems from './sideMenuListItems'
+import IconProps from '../../icons/iconprops';
 import './SideMenu.css'
 
 interface SideMenuListItemProps {
     name: string;
-    icon: React.ReactElement;
+    icon: React.FC<IconProps>;
 }
 
-function SideMenuListItem(props: SideMenuListItemProps) {
+const SideMenuListItem: React.FC<SideMenuListItemProps> = (props) => {
     const {name, icon} = props;
     return (
         <li className="SideMenu-li">

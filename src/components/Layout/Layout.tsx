@@ -2,7 +2,7 @@ import React from 'react'
 import './Layout.css';
 
 interface LayoutProps {
-    children: React.ReactChildren
+    children: React.ReactChild
 }
 
 function Layout(props: LayoutProps) {

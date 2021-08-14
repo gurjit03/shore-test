@@ -1,4 +1,3 @@
-import React from 'react';
 import { MonitorIcon, FileIcon, ProfileIcon, PadNoteIcon, PresentationIcon, SettingsIcon, ShieldIcon} from '../../icons';
 
 
