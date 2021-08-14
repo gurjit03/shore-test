@@ -1,0 +1,58 @@
+.ContactListItem {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ContactListItem-name {
+  font-size: 14px;
+}
+
+.ContactListItem-avatar {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.ContactListItem-status-wrapper {
+  position: relative;
+}
+
+.ContactListItem-status {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  height: 10px;
+  width: 10px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.divider {
+  border-left: 2px solid lightgrey;
+  height: 20px;
+}
+
+.Status-active {
+  color: green;
+}
+
+.Status-inactive {
+  color: red;
+}
+
+.button {
+  border: 1px solid green;
+  padding: 8px 32px;
+  border-radius: 24px;
+  text-align: center;
+  text-decoration: none;
+  background-color: white; /* Green */
+  color: green;
+}
+
+.SearchBox {
+  display: flex;
+  align-items: center;
+}
