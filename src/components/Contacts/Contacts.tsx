@@ -1,8 +1,9 @@
 import React from 'react';
 
-import {useStore} from '../../config/store';
+import { useStore } from '../../config/store';
 import fetchUsers from '../../utils/fetchUsers';
 import ContactListItem from '../ContactListItem/ContactListItem'
+import './Contacts.css';
 
 const Contacts: React.FC = (props) => {
     const users = useStore(state => state.users)
@@ -14,7 +15,7 @@ const Contacts: React.FC = (props) => {
             setUsers(users);
         }
         fetchAndSetUsers();
-    }, []);
+    }, [setUsers]);
 
     return (
         <div className="Contacts">

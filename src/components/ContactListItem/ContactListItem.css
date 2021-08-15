@@ -4,20 +4,31 @@
   align-items: center;
   justify-content: space-between;
   border: 1px solid var(--grey-100);
-  border-radius: 8px;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: var(--grey-300);
+  cursor: pointer;
 }
 
-.ContactListItem-name {
+.ContactListItem-name,
+.ContactListItem-email,
+.ContactListItem-phone,
+.ContactListItem-contribution {
   font-size: 14px;
+  margin: 0;
+  padding: 0;
+  margin-right: 16px;
 }
 
 .ContactListItem-avatar {
   border-radius: 50%;
-  width: 100px;
+  width: 36px;
+  height: 36px;
 }
 
-.ContactListItem-status-wrapper {
+.ContactListItem-avatar-wrapper {
   position: relative;
+  margin-right: 16px;
 }
 
 .ContactListItem-status {
@@ -34,14 +45,15 @@
 .divider {
   border-left: 2px solid lightgrey;
   height: 20px;
+  margin-right: 16px;
 }
 
 .Status-active {
-  color: green;
+  background-color: green;
 }
 
 .Status-inactive {
-  color: red;
+  background-color: red;
 }
 
 /* .button {
