@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider, createStore } from './config/store';
 import AppRouter from './Router';
-import './App.css';
+import './App.scss';
 
 const App: React.FC = () => {
   return (

@@ -1,0 +1,27 @@
+@import "../styles/helpers.scss";
+
+// Checkbox input
+.check-field {
+  display: flex;
+  align-items: center;
+
+  &-box {
+    @include flex-center;
+    height: 24px;
+    width: 24px;
+    border-radius: radius(1);
+    background: var(--green-600);
+    margin-right: 12px;
+
+    svg {
+      height: 12px;
+      width: 12px;
+      fill: $white;
+    }
+  }
+
+  &-label {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

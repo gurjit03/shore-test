@@ -1,6 +1,6 @@
 import React from 'react';
 import { User } from '../../interfaces/Contacts.Interface';
-import './ContactListItem.css';
+import './ContactListItem.scss';
 
 const ContactListItem: React.FC<User> = (props) => {
     const {id, email, firstName, lastName, avatar, contribution, active} = props;

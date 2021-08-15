@@ -3,7 +3,7 @@ import React from 'react';
 import { useStore } from '../../config/store';
 import fetchUsers from '../../utils/fetchUsers';
 import ContactListItem from '../ContactListItem/ContactListItem'
-import './Contacts.css';
+import './Contacts.scss';
 
 const Contacts: React.FC = (props) => {
     const users = useStore(state => state.users)

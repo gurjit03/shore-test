@@ -1,0 +1,32 @@
+@import "../styles/helpers.scss";
+
+// Primary button css
+.primary-button {
+  @include flex-center;
+  padding: 12px 24px;
+  background-color: $white;
+  color: $medium-grey;
+  border-radius: radius(1);
+  border: 1px solid $thin-border;
+  height: 48px;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &-icon {
+    height: 36px;
+    width: 36px;
+    fill: $medium-grey;
+  }
+
+  &--success {
+    background-color: var(--green-600);
+    color: $white;
+    border: unset;
+
+    .primary-button-icon {
+      fill: $white;
+    }
+  }
+}

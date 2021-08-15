@@ -1,6 +1,6 @@
 import React from 'react'
 import SideMenu from '../SideMenu/SideMenu';
-import './Layout.css';
+import './Layout.scss';
 
 interface LayoutProps {
     children: React.ReactChild
