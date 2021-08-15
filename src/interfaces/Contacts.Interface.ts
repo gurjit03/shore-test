@@ -9,8 +9,12 @@ export interface UserRaw {
 export interface User {
     id: number;
     email: string;
+    department: string;
     firstName: string;
     lastName: string;
     avatar: string;
+    contribution: string;
+    gender: string;
+    active: boolean;
 }
 

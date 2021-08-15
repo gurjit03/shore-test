@@ -16,10 +16,10 @@ const ContactListItem: React.FC<User> = (props) => {
                 </div>
                 <p className="ContactListItem-name">{fullName}</p>
                 <span className="divider" />
-                <p>sdf</p>
-                <div class="vertical"></div>
-                <li>sdf</li>
-                <div class="vertical"></div>
+                <p className="ContactListItem-email">{email}</p>
+                <span className="divider" />
+                <p className="divider" />
+                <span className="divider" />
                 <li>sdf</li>
         </li>
     )

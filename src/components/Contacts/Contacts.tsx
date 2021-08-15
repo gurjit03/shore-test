@@ -22,6 +22,7 @@ const Contacts: React.FC = (props) => {
     React.useEffect(() => {
         fetchAndSetUsers();
     }, []);
+
     return (
         <div className="Contacts">
             {users.map(user => <ContactListItem key={user.id} {...user} />)}
