@@ -1,5 +1,5 @@
 import React, { ChangeEvent } from 'react';
-import FormField  from './FormField';
+import FormField  from './FormField/FormField';
 
 interface InputFieldProps {
   label: string;

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import sideMenuListItems from './sideMenuListItems'
 import IconProps from '../../interfaces/IconProps.interface';
 import AppLogoIcon from '../../icons/AppLogoIcon';
-import './SideMenu.css'
+import './SideMenu.scss'
 
 interface SideMenuListItemProps {
     name: string;

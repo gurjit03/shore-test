@@ -1,14 +1,14 @@
 import React from 'react';
-import { LoadingIcon } from '../icons';
+import { LoadingIcon } from '../../icons';
 
-type ButtonVariant = 'primary' | 'secondary';
+type ButtonVariant = 'success' | 'warning';
 type ButtonTypes = "button" | "submit" | "reset" | undefined
 
 interface ButtonProps {
   className?: string;
-  loading: boolean;
+  loading?: boolean;
   children: React.ReactChildren | React.ReactElement | JSX.Element;
-  type: ButtonTypes;
+  type?: ButtonTypes;
   variant?: ButtonVariant;
   onClick?: () => {}
 }
@@ -16,10 +16,14 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = (props) => {
   const {
-    className, loading, children, type
+    className, loading = false, children, type = 'button', variant, onClick = () => {}
   } = props;
   return (
-    <button type={type} className={`primary-button ${type ? `primary-button--${type}` : ''} ${className || ''}`}>
+    <button 
+      type={type} 
+      className={`primary-button ${variant ? `primary-button--${variant}` : ''} ${className || ''}`}
+      onClick={onClick}
+    >
       {loading ? (<LoadingIcon className="primary-button-icon" />) : (children)}
     </button>
   )

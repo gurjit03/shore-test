@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { CancelIcon } from '../icons';
-import Button  from './Button';
+import { CancelIcon } from '../../icons';
+import Button  from '../Button/Button';
 
 interface ModalProps {
   children: React.ReactChildren | React.ReactElement | JSX.Element;
@@ -35,11 +35,12 @@ const Modal: React.FC<ModalProps> = (props) => {
           <div className="modal-content-body">{children}</div>
           <div className="modal-content-footer">
             <Button className="modal-content-footer-button" onClick={onSave}><span>Cancel</span></Button>
-            <Button loading={loading} className="modal-content-footer-button" onClick={onSave}>Save</Button>
+            <Button variant="success" loading={loading} className="modal-content-footer-button" onClick={onSave}><span>Save</span></Button>
           </div>
         </div>
       </div>,
-    document.body,
+      document.body
+    )
   )
 }
 

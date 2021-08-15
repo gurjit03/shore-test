@@ -1,5 +1,5 @@
-import React from 'react';
-import FormField from './FormField';
+import React, { ChangeEvent } from 'react';
+import FormField from './FormField/FormField';
 
 interface RadioFieldData {
   title: string;
@@ -10,13 +10,13 @@ interface RadioFieldProps {
   className?: string;
   label: string;
   value?: string;
-  onChange: (value: string) => {};
+  onChange?: (value: string) => {};
   data: RadioFieldData[]
 }
 
 const RadioField: React.FC<RadioFieldProps> = (props) => {
   const {
-    className, label, value = '', onChange, data,
+    className, label, value = '', onChange = () => {}, data,
   } = props;
   return (
     <FormField className={className} label={label}>

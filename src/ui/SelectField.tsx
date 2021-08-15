@@ -1,5 +1,5 @@
-import React from 'react';
-import FormField from './FormField';
+import React, { ChangeEvent } from 'react';
+import FormField from './FormField/FormField';
 
 interface SelectFieldData {
   title: string;
@@ -11,9 +11,9 @@ interface SelectFieldProps {
   className?: string;
   id?: string;
   label: string;
-  type?: string,
-  value?: string,
-  onChange: (value: string | number) => {}
+  type?: string;
+  value?: string;
+  onChange?: (event: ChangeEvent<HTMLSelectElement>) => {}
   placeholder?: string;
 }
 
@@ -24,7 +24,7 @@ const SelectField: React.FC<SelectFieldProps> = (props) => {
   const inputId = id || (Math.random() + 1).toString(36).substring(7);
   return (
     <FormField className={`${className} form-field--select`} id={inputId} label={label}>
-      <select id={inputId} className="form-field-select" type={type} onChange={onChange} value={value} placeholder={placeholder}>
+      <select id={inputId} className="form-field-select"  onChange={onChange} value={value} placeholder={placeholder}>
         {data?.map(({ title, value }) => (
           <option value={value}>{title}</option>
         ))}
