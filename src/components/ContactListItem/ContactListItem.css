@@ -3,6 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid var(--grey-100);
+  border-radius: 8px;
 }
 
 .ContactListItem-name {
@@ -42,17 +44,16 @@
   color: red;
 }
 
-.button {
+/* .button {
   border: 1px solid green;
   padding: 8px 32px;
   border-radius: 24px;
   text-align: center;
   text-decoration: none;
-  background-color: white; /* Green */
   color: green;
 }
 
 .SearchBox {
   display: flex;
   align-items: center;
-}
+} */

@@ -1,8 +1,9 @@
-import create from 'zustand'
+import create, {SetState} from 'zustand'
+import createContext from 'zustand/context'
 import { User } from '../interfaces/Contacts.Interface';
 import { UserState } from '../interfaces/UserState.interface';
 
-const createStore = () => create<UserState>(set => ({
+export const createStore = () => create<UserState>((set: SetState<UserState>) => ({
     users: [],
     setUsers: (usersData: User[]) => set(state => { 
         return { 
@@ -10,5 +11,5 @@ const createStore = () => create<UserState>(set => ({
         }
     })
 })) 
+export const { Provider, useStore } = createContext<UserState>()
 
-export default createStore;

@@ -1,25 +1,18 @@
 import React from 'react';
+
+import {useStore} from '../../config/store';
+import fetchUsers from '../../utils/fetchUsers';
 import ContactListItem from '../ContactListItem/ContactListItem'
-import {User, UserRaw} from '../../interfaces/Contacts.Interface';
-import * as appConfig from '../../config/app';
 
 const Contacts: React.FC = (props) => {
-    const [users, setUsers] = React.useState<User[]>([]);
-    const fetchAndSetUsers = React.useCallback(async () => {
-        const res = await fetch(appConfig.API_URL);
-        const rawUsersData = await res.json();
-        const usersData: User[] = rawUsersData.data.map((user: UserRaw) => {
-            return {
-                id: user.id,
-                email: user.email,
-                firstName: user.first_name,
-                lastName: user.last_name,
-                
-            }
-        })
-        setUsers(usersData);
-    }, []);
+    const users = useStore(state => state.users)
+    const setUsers = useStore(state => state.setUsers);
+    
     React.useEffect(() => {
+        async function fetchAndSetUsers() {
+            const users = await fetchUsers();
+            setUsers(users);
+        }
         fetchAndSetUsers();
     }, []);
 
