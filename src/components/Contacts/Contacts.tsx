@@ -1,10 +1,25 @@
 import React from 'react';
 
-function Contacts() {
+import { useStore } from '../../config/store';
+import fetchUsers from '../../utils/fetchUsers';
+import ContactListItem from '../ContactListItem/ContactListItem'
+import './Contacts.css';
+
+const Contacts: React.FC = (props) => {
+    const users = useStore(state => state.users)
+    const setUsers = useStore(state => state.setUsers);
     
+    React.useEffect(() => {
+        async function fetchAndSetUsers() {
+            const users = await fetchUsers();
+            setUsers(users);
+        }
+        fetchAndSetUsers();
+    }, [setUsers]);
+
     return (
         <div className="Contacts">
-            <p>Contacts</p>
+            {users.map(user => <ContactListItem key={user.id} {...user} />)}
         </div>
     )
 }   

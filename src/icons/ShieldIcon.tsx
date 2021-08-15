@@ -1,5 +1,5 @@
 import React from 'react';
-import IconProps from './iconprops';
+import IconProps from '../interfaces/IconProps.interface';
 
 const ShieldIcon: React.FC<IconProps> = (props) => {
     return (

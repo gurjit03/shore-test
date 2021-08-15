@@ -5,7 +5,9 @@ body {
 
 :root {
   --app-white: #ffffff;
+  --grey-100: #e7e3e3;
   --grey-200: #f6f7f8;
+  --grey-300: #fafbfb;
   --grey-500: #abaeb9;
   --green-500: #49cc99;
   --purple-400: #233456;
