@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import sideMenuListItems from './sideMenuListItems'
-import IconProps from '../../icons/iconprops';
+import IconProps from '../../interfaces/IconProps.interface';
 import AppLogoIcon from '../../icons/AppLogoIcon';
 import './SideMenu.css'
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import IconProps from './iconprops'
+import IconProps from '../interfaces/IconProps.interface'
 
 const SearchIcon: React.FC<IconProps> = (props) => {
     return (

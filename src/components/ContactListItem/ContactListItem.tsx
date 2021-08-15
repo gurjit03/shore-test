@@ -1,5 +1,5 @@
 import React from 'react';
-import { User } from '../Contacts/Contacts.Interface';
+import { User } from '../../interfaces/Contacts.Interface';
 
 const ContactListItem: React.FC<User> = (props) => {
     const {id, email, firstName, lastName, avatar} = props;

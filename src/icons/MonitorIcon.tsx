@@ -1,5 +1,5 @@
 import React from 'react'
-import IconProps from './iconprops'
+import IconProps from '../interfaces/IconProps.interface'
 
 const MonitorIcon: React.FC<IconProps> = (props) => {
     return (

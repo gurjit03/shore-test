@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactListItem from '../ContactListItem/ContactListItem'
-import {User, UserRaw} from './Contacts.Interface';
+import {User, UserRaw} from '../../interfaces/Contacts.Interface';
 import * as appConfig from '../../config/app';
 
 const Contacts: React.FC = (props) => {
