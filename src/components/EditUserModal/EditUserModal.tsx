@@ -10,7 +10,7 @@ interface EditUserModalProps {
 
 const EditUserModal: React.FC<EditUserModalProps> = (props) => {
     const {isOpen, heading = "Edit user",onModalClose } = props;
-    
+
     if(!isOpen) return null
     
     return (
