@@ -26,7 +26,7 @@ const SelectField: React.FC<SelectFieldProps> = (props) => {
     <FormField className={`${className} form-field--select`} id={inputId} label={label}>
       <select id={inputId} className="form-field-select"  onChange={onChange} value={value} placeholder={placeholder}>
         {data?.map(({ title, value }) => (
-          <option value={value}>{title}</option>
+          <option key={value} value={value}>{title}</option>
         ))}
       </select>
     </FormField>

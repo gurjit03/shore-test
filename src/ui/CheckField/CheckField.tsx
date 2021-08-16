@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckIcon } from '../../icons';
+import './CheckField.scss';
 
 interface CheckFieldProps {
   label: string;

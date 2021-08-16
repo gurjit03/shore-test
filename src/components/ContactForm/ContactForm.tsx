@@ -6,7 +6,6 @@ import SelectField from '../../ui/SelectField';
 import CheckField  from '../../ui/CheckField/CheckField';
 import './ContactForm.scss';
 
-
 const ContactForm: React.FC = () => {
     return (
         <div className="contact-form">

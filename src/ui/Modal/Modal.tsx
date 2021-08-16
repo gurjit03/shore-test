@@ -3,15 +3,16 @@ import ReactDOM from 'react-dom';
 
 import { CancelIcon } from '../../icons';
 import Button  from '../Button/Button';
+import './Modal.scss';
 
 interface ModalProps {
   children: React.ReactChildren | React.ReactElement | JSX.Element;
   heading: string;
   className?: string;
-  loading: boolean;
+  loading?: boolean;
   footerButtonText?: string;
-  onClose: () => {};
-  onSave: () => {};
+  onClose?: () => void;
+  onSave?: () => void;
 }
 
 const Modal: React.FC<ModalProps> = (props) => {

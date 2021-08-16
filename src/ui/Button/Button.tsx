@@ -1,5 +1,6 @@
 import React from 'react';
 import { LoadingIcon } from '../../icons';
+import './Button.scss';
 
 type ButtonVariant = 'success' | 'warning';
 type ButtonTypes = "button" | "submit" | "reset" | undefined
@@ -10,7 +11,7 @@ interface ButtonProps {
   children: React.ReactChildren | React.ReactElement | JSX.Element;
   type?: ButtonTypes;
   variant?: ButtonVariant;
-  onClick?: () => {}
+  onClick?: () => void
 }
 
 
