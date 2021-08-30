@@ -1,7 +1,7 @@
 import React from 'react';
-import './SearchBar';
+import './SearchBar.scss';
 
-function SearchBar() {
+const SearchBar:React.FC = () => {
     return (
         <div className="SearchBar">Search Bar
             <input type='search' />

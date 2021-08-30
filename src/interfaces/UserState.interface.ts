@@ -1,6 +1,8 @@
 import { User } from "./Contacts.Interface";
 
 export interface UserState {
-    users: User[],
-    setUsers: (users: User[]) => void
+    users: User[];
+    editUser: User;
+    setUsers: (users: User[]) => void;
+    setEditUser: (user: User) => void;
 }

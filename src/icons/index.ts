@@ -7,3 +7,6 @@ export {default as ProfileIcon} from './ProfileIcon';
 export {default as SearchIcon} from './SearchIcon';
 export {default as SettingsIcon} from './SettingsIcon'
 export {default as ShieldIcon} from './ShieldIcon';
+export {default as CancelIcon } from './Cancelicon';
+export {default as LoadingIcon } from './LoadingIcon';
+export {default as CheckIcon } from './CheckIcon';

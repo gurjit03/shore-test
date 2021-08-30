@@ -1,0 +1,22 @@
+$thin-border: #cccccc;
+$medium-grey: #666666;
+$white: #ffffff;
+$black: #000000;
+$dark-grey: #333333;
+$tablet: 768px;
+
+@function radius($value: 200) {
+  @return $value * 5px;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin tablet {
+  @media only screen and (max-width: $tablet) {
+    @content;
+  }
+}

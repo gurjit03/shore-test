@@ -1,7 +1,7 @@
 import React from 'react';
-import './AppBar';
+import './AppBar.scss';
 
-function AppBar() {
+const AppBar:React.FC = () => {
     return (
         <nav className="AppBar">
             <div>Contacts</div>
